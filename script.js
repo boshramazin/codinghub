@@ -22,7 +22,8 @@ const teamData = {
     },
     social: {
         title: "Social Media Team",
-        members: ["Rawa'a Abedelkareem", "Hamzah Al Hamzah", "Bayan Obeidat", "Zaid Al-Shaker"]
+                members: ["Rawa'a Abedelkaeem", "Boshra Al’batoush", "Sidra Khatatbeh", "Shahed Daradkah","Retaj Louranse","Bayan Al’azzam","Roa’a Melhem","Taimaa ALQatawneh","Sohad Alnaddaf","Sedra Tarawneh","Hebaش",]
+
     },
     activities: {
         title: "Activities Team",
