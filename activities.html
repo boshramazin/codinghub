@@ -1,371 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodingHub - Activities</title>
-    <script src="https://cdn.tailwindcss.co<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodingHub - Activities</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body {
-            background-color: #030712;
-            color: #ffffff;
-            font-family: 'Inter', sans-serif;
-        }
-        .text-glow {
-            text-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
-        }
-        .gallery-card {
-            transition: all 0.3s ease;
-        }
-        .gallery-card:hover {
-            transform: translateY(-4px);
-            border-color: rgba(14, 165, 233, 0.3);
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingHub - Activities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #030712;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+        }
+        .gallery-card {
+            transition: all 0.3s ease;
+        }
+        .gallery-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(14, 165, 233, 0.3);
+        }
+    </style>
 </head>
 <body>
 
-    <header class="border-b border-gray-800 bg-[#030712]/80 backdrop-blur-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-2 font-bold text-xl text-white">
-                <div class="bg-sky-500 text-white p-1.5 rounded-lg text-sm">
-                    <i class="fas fa-code"></i>
-                </div>
-                Coding<span class="text-sky-400">Hub</span>
-            </div>
-            
-            <nav class="hidden md:flex items-center gap-4 text-sm text-gray-400">
-                <a href="index.html" id="nav-home" class="hover:text-white transition px-3 py-1.5 rounded-full">Home</a>
-                <a href="activities.html" id="nav-gallery" class="bg-sky-950/50 text-sky-400 px-3 py-1.5 rounded-full font-medium">Activities</a>
-                <a href="social-media.html" id="nav-social" class="hover:text-white transition px-3 py-1.5 rounded-full">Social Media</a>
-            </nav>
+    <header class="border-b border-gray-800 bg-[#030712]/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2 font-bold text-xl text-white">
+                <div class="bg-sky-500 text-white p-1.5 rounded-lg text-sm">
+                    <i class="fas fa-code"></i>
+                </div>
+                Coding<span class="text-sky-400">Hub</span>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-4 text-sm text-gray-400">
+                <a href="index.html" id="nav-home" class="hover:text-white transition px-3 py-1.5 rounded-full">Home</a>
+                <a href="activities.html" id="nav-gallery" class="bg-sky-950/50 text-sky-400 px-3 py-1.5 rounded-full font-medium">Activities</a>
+                <a href="social-media.html" id="nav-social" class="hover:text-white transition px-3 py-1.5 rounded-full">Social Media</a>
+            </nav>
 
-            <button onclick="toggleMobileMenu()" class="md:hidden text-gray-400 hover:text-white text-xl focus:outline-none">
-                <i id="menu-icon" class="fas fa-bars"></i>
-            </button>
-        </div>
+            <button onclick="toggleMobileMenu()" class="md:hidden text-gray-400 hover:text-white text-xl focus:outline-none">
+                <i id="menu-icon" class="fas fa-bars"></i>
+            </button>
+        </div>
 
-        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-800 bg-[#030712]/95 px-4 py-4 space-y-3">
-            <a href="index.html" class="block text-gray-400 hover:text-white hover:bg-slate-900 px-4 py-2 rounded-xl text-sm transition">Home</a>
-            <a href="activities.html" class="block bg-sky-950/50 text-sky-400 px-4 py-2 rounded-xl text-sm font-medium">Activities</a>
-            <a href="social-media.html" class="block text-gray-400 hover:text-white hover:bg-slate-900 px-4 py-2 rounded-xl text-sm transition">Social Media</a>
-        </div>
-    </header>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-800 bg-[#030712]/95 px-4 py-4 space-y-3">
+            <a href="index.html" class="block text-gray-400 hover:text-white hover:bg-slate-900 px-4 py-2 rounded-xl text-sm transition">Home</a>
+            <a href="activities.html" class="block bg-sky-950/50 text-sky-400 px-4 py-2 rounded-xl text-sm font-medium">Activities</a>
+            <a href="social-media.html" class="block text-gray-400 hover:text-white hover:bg-slate-900 px-4 py-2 rounded-xl text-sm transition">Social Media</a>
+        </div>
+    </header>
 
-    <section class="max-w-6xl mx-auto px-4 py-16 text-center">
-        <span class="text-xs font-bold tracking-widest text-sky-500 uppercase block mb-4">Events & Gallery</span>
-        
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-glow">
-            Moments from <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-500">our community.</span>
-        </h1>
-        
-        <p class="text-gray-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed mb-10">
-            Every workshop, hackathon, and meetup tells a story. Here are a few of ours.
-        </p>
+    <section class="max-w-6xl mx-auto px-4 py-20 text-center">
+        <span class="text-xs font-bold tracking-widest text-sky-500 uppercase block mb-4">Events & Gallery</span>
+        
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-glow">
+            Moments from <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-500">our community.</span>
+        </h1>
+        
+        <p class="text-gray-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed mb-12">
+            Every workshop, hackathon, and meetup tells a story. Here are a few of ours.
+        </p>
 
-        <!-- 🎛️ أزرار التصفية والتقسيم الجديدة -->
-        <div class="flex flex-wrap justify-center items-center gap-3 mb-12">
-            <button onclick="filterSelection('all')" class="filter-btn bg-sky-500 text-white text-sm px-5 py-2 rounded-full font-medium transition shadow-lg shadow-sky-500/10">الكل</button>
-            <button onclick="filterSelection('launch')" class="filter-btn bg-slate-900 text-gray-400 hover:text-white text-sm px-5 py-2 rounded-full font-medium transition border border-slate-850">حفل الافتتاح</button>
-            <button onclick="filterSelection('workshops')" class="filter-btn bg-slate-900 text-gray-400 hover:text-white text-sm px-5 py-2 rounded-full font-medium transition border border-slate-850">الورشات</button>
-            <button onclick="filterSelection('videos')" class="filter-btn bg-slate-900 text-gray-400 hover:text-white text-sm px-5 py-2 rounded-full font-medium transition border border-slate-850">الفيديوهات</button>
-        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto text-left">
+            
+            <div class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
+                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
+                    <img src="images/1.jpg" alt="Team Launch 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-base text-white">انطلاقة الفريق 2026</h3>
+                    <p class="text-gray-400 text-xs mt-1">اليوم اللي تحول فيه الفريق من فكرة لواقع.</p>
+                </div>
+            </div>
 
-        <!-- 🖼️ شبكة عرض الكروت المفلترة -->
-        <div id="galleryContainer" class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto text-left">
-            
-            <!-- قسم حفل الافتتاح (launch) -->
-            <div data-category="launch" class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
-                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                    <img src="images/1.jpg" alt="Team Launch 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
-                </div>
-                <div class="p-5">
-                    <h3 class="font-bold text-base text-white">انطلاقة الفريق 2026</h3>
-                    <p class="text-gray-400 text-xs mt-1">اليوم اللي تحول فيه الفريق من فكرة لواقع.</p>
-                </div>
-            </div>
+            <div class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
+                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
+                    <img src="images/3.jpg" alt="Team Launch 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-base text-white">الدكتور محمد ابو هدهود</h3>
+                    <p class="text-gray-400 text-xs mt-1">تواجد الدكتور في حفل الافتتاح وتكريمه</p>
+                </div>
+            </div>
 
-            <div data-category="launch" class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
-                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                    <img src="images/3.jpg" alt="Team Launch 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
-                </div>
-                <div class="p-5">
-                    <h3 class="font-bold text-base text-white">الدكتور محمد ابو هدهود</h3>
-                    <p class="text-gray-400 text-xs mt-1">تواجد الدكتور في حفل الافتتاح وتكريمه</p>
-                </div>
-            </div>
+            <div class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
+                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
+                    <img src="images/4.jpeg" alt="Team Launch 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-base text-white">الحضور  </h3>
+                    <p class="text-gray-400 text-xs mt-1"> تواجد الحضور واستماعهم للكلمات الافتتاحيه   .</p>
+                </div>
+            </div>
 
-            <div data-category="launch" class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
-                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                    <img src="images/4.jpeg" alt="Team Launch 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
-                </div>
-                <div class="p-5">
-                    <h3 class="font-bold text-base text-white">الحضور</h3>
-                    <p class="text-gray-400 text-xs mt-1">تواجد الحضور واستماعهم للكلمات الافتتاحيه.</p>
-                </div>
-            </div>
+            <div class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
+                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
+                    <img src="images/6.jpeg" alt="Team Members" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-base text-white">اعضاء الفريق</h3>
+                    <p class="text-gray-400 text-xs mt-1">تواجد اعضاء الفريق في الافتتاح.</p>
+                </div>
+            </div>
+            
+            <div class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
+                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
+                    <img src="images/wo1.jpg" alt="Workshop" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-base text-white">ورشة الدعم النفسي  </h3>
+                    <p class="text-gray-400 text-xs mt-1"> تواجد الأعضاء في ورشة الدعم النفسي     .</p>
+                </div>
+            </div>
+            
+            <div class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
+                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
+                    <img src="images/wo2.jpg" alt="Workshop" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-base text-white">ورشة الدعم النفسي   </h3>
+                    <p class="text-gray-400 text-xs mt-1"> تواجد الأعضاء في ورشة الدعم النفسي     .</p>
+                </div>
+            </div>
 
-            <div data-category="launch" class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
-                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                    <img src="images/6.jpeg" alt="Team Members" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
-                </div>
-                <div class="p-5">
-                    <h3 class="font-bold text-base text-white">اعضاء الفريق</h3>
-                    <p class="text-gray-400 text-xs mt-1">تواجد اعضاء الفريق في الافتتاح.</p>
-                </div>
-            </div>
-            
-            <!-- قسم الورشات (workshops) -->
-            <div data-category="workshops" class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
-                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                    <img src="images/wo1.jpg" alt="Workshop" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
-                </div>
-                <div class="p-5">
-                    <h3 class="font-bold text-base text-white">ورشة الدعم النفسي</h3>
-                    <p class="text-gray-400 text-xs mt-1">تواجد الأعضاء في ورشة الدعم النفسي.</p>
-                </div>
-            </div>
-            
-            <div data-category="workshops" class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
-                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                    <img src="images/wo2.jpg" alt="Workshop" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
-                </div>
-                <div class="p-5">
-                    <h3 class="font-bold text-base text-white">ورشة الدعم النفسي</h3>
-                    <p class="text-gray-400 text-xs mt-1">تواجد الأعضاء في ورشة الدعم النفسي.</p>
-                </div>
-            </div>
+            <div class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
+                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
+                    <img src="images/wo4.jpg" alt="Team Launch 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-base text-white">جانب من ورشة الدعم النفسي</h3>
+                    <p class="text-gray-400 text-xs mt-1"> تفاعل مميز ومشاركة نصائح ملهمة لدعم الطلاب وتطوير مهاراتهم الشخصية.</p>
+                </div>
+            </div>
 
-            <div data-category="workshops" class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
-                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                    <img src="images/wo4.jpg" alt="Team Launch 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
-                </div>
-                <div class="p-5">
-                    <h3 class="font-bold text-base text-white">جانب من ورشة الدعم النفسي</h3>
-                    <p class="text-gray-400 text-xs mt-1">تفاعل مميز ومشاركة نصائح ملهمة لدعم الطلاب وتطوير مهاراتهم الشخصية.</p>
-                </div>
-            </div>
+            <div class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
+                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
+                    <video class="w-full h-full object-cover absolute inset-0" controls preload="metadata">
+                        <source src="images/vid1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-base text-white">فيديو من ورشة الدعم النفسي</h3>
+                    <p class="text-gray-400 text-xs mt-1">مقتطفات مرئية توثق تفاعل الأعضاء والحظور خلال الورشة.</p>
+                </div>
+            </div>
 
-            <!-- قسم الفيديوهات (videos) -->
-            <div data-category="videos" class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
-                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                    <video class="w-full h-full object-cover absolute inset-0" controls preload="auto" playsinline poster="images/wo4.jpg">
-                        <source src="https://raw.githubusercontent.com/boshramazin/codinghub/main/images/vid1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="p-5">
-                    <h3 class="font-bold text-base text-white">فيديو من ورشة الدعم النفسي</h3>
-                    <p class="text-gray-400 text-xs mt-1">مقتطفات مرئية توثق تفاعل الأعضاء والحضور خلال الورشة.</p>
-                </div>
-            </div>
+        </div> </section>
 
-        </div> 
-    </section>
+    <footer class="border-t border-gray-900 py-8 text-center text-xs text-gray-500">
+        &copy; 2026 CodingHub. All rights reserved.
+    </footer>
 
-    <footer class="border-t border-gray-900 py-8 text-center text-xs text-gray-500">
-        &copy; 2026 CodingHub. All rights reserved.
-    </footer>
-
-    <script src="script.js"></script>
-    <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
-
-        // 🧠 كود الـ Filter الذكي للتنقل بين الأقسام
-        function filterSelection(category) {
-            const cards = document.querySelectorAll('.gallery-card');
-            const buttons = document.querySelectorAll('.filter-btn');
-            
-            // تحديث ستايل الزر النشط
-            buttons.forEach(btn => {
-                if(btn.getAttribute('onclick').includes(category)) {
-                    btn.classList.remove('bg-slate-900', 'text-gray-400', 'border-slate-850');
-                    btn.classList.add('bg-sky-500', 'text-white', 'shadow-lg', 'shadow-sky-500/10');
-                } else {
-                    btn.classList.add('bg-slate-900', 'text-gray-400', 'border-slate-850');
-                    btn.classList.remove('bg-sky-500', 'text-white', 'shadow-lg', 'shadow-sky-500/10');
-                }
-            });
-
-            // إخفاء وإظهار الكروت بناءً على القسم
-            cards.forEach(card => {
-                const cardCategory = card.getAttribute('data-category');
-                if (category === 'all' || cardCategory === category) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
-    </script>
+    <script src="script.js"></script>
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
 </body>
-</html>m"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body {
-            background-color: #030712;
-            color: #ffffff;
-            font-family: 'Inter', sans-serif;
-        }
-        .text-glow {
-            text-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
-        }
-        .gallery-card {
-            transition: all 0.3s ease;
-        }
-        .gallery-card:hover {
-            transform: translateY(-4px);
-            border-color: rgba(14, 165, 233, 0.3);
-        }
-    </style>
-</head>
-<body>
-
-    <header class="border-b border-gray-800 bg-[#030712]/80 backdrop-blur-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-2 font-bold text-xl text-white">
-                <div class="bg-sky-500 text-white p-1.5 rounded-lg text-sm">
-                    <i class="fas fa-code"></i>
-                </div>
-                Coding<span class="text-sky-400">Hub</span>
-            </div>
-            
-            <nav class="hidden md:flex items-center gap-4 text-sm text-gray-400">
-                <a href="index.html" id="nav-home" class="hover:text-white transition px-3 py-1.5 rounded-full">Home</a>
-                <a href="activities.html" id="nav-gallery" class="bg-sky-950/50 text-sky-400 px-3 py-1.5 rounded-full font-medium">Activities</a>
-                <a href="social-media.html" id="nav-social" class="hover:text-white transition px-3 py-1.5 rounded-full">Social Media</a>
-            </nav>
-
-            <button onclick="toggleMobileMenu()" class="md:hidden text-gray-400 hover:text-white text-xl focus:outline-none">
-                <i id="menu-icon" class="fas fa-bars"></i>
-            </button>
-        </div>
-
-        <div id="mobileMenu" class="hidden md:hidden border-t border-gray-800 bg-[#030712]/95 px-4 py-4 space-y-3">
-            <a href="index.html" class="block text-gray-400 hover:text-white hover:bg-slate-900 px-4 py-2 rounded-xl text-sm transition">Home</a>
-            <a href="activities.html" class="block bg-sky-950/50 text-sky-400 px-4 py-2 rounded-xl text-sm font-medium">Activities</a>
-            <a href="social-media.html" class="block text-gray-400 hover:text-white hover:bg-slate-900 px-4 py-2 rounded-xl text-sm transition">Social Media</a>
-        </div>
-    </header>
-
-    <section class="max-w-6xl mx-auto px-4 py-20 text-center">
-        <span class="text-xs font-bold tracking-widest text-sky-500 uppercase block mb-4">Events & Gallery</span>
-        
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-glow">
-            Moments from <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-500">our community.</span>
-        </h1>
-        
-        <p class="text-gray-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed mb-12">
-            Every workshop, hackathon, and meetup tells a story. Here are a few of ours.
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto text-left">
-            
-            <div class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
-                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                    <img src="images/1.jpg" alt="Team Launch 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
-                </div>
-                <div class="p-5">
-                    <h3 class="font-bold text-base text-white">انطلاقة الفريق 2026</h3>
-                    <p class="text-gray-400 text-xs mt-1">اليوم اللي تحول فيه الفريق من فكرة لواقع.</p>
-                </div>
-            </div>
-
-            <div class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
-                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                    <img src="images/3.jpg" alt="Team Launch 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
-                </div>
-                <div class="p-5">
-                    <h3 class="font-bold text-base text-white">الدكتور محمد ابو هدهود</h3>
-                    <p class="text-gray-400 text-xs mt-1">تواجد الدكتور في حفل الافتتاح وتكريمه</p>
-                </div>
-            </div>
-
-            <div class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
-                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                    <img src="images/4.jpeg" alt="Team Launch 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
-                </div>
-                <div class="p-5">
-                    <h3 class="font-bold text-base text-white">الحضور  </h3>
-                    <p class="text-gray-400 text-xs mt-1"> تواجد الحضور واستماعهم للكلمات الافتتاحيه   .</p>
-                </div>
-            </div>
-
-            <div class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
-                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                    <img src="images/6.jpeg" alt="Team Members" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
-                </div>
-                <div class="p-5">
-                    <h3 class="font-bold text-base text-white">اعضاء الفريق</h3>
-                    <p class="text-gray-400 text-xs mt-1">تواجد اعضاء الفريق في الافتتاح.</p>
-                </div>
-            </div>
-            
-            <div class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
-                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                    <img src="images/wo1.jpg" alt="Workshop" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
-                </div>
-                <div class="p-5">
-                    <h3 class="font-bold text-base text-white">ورشة الدعم النفسي  </h3>
-                    <p class="text-gray-400 text-xs mt-1"> تواجد الأعضاء في ورشة الدعم النفسي     .</p>
-                </div>
-            </div>
-            
-            <div class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
-                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                    <img src="images/wo2.jpg" alt="Workshop" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
-                </div>
-                <div class="p-5">
-                    <h3 class="font-bold text-base text-white">ورشة الدعم النفسي   </h3>
-                    <p class="text-gray-400 text-xs mt-1"> تواجد الأعضاء في ورشة الدعم النفسي     .</p>
-                </div>
-            </div>
-
-            <div class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
-                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                    <img src="images/wo4.jpg" alt="Team Launch 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 absolute inset-0">
-                </div>
-                <div class="p-5">
-                    <h3 class="font-bold text-base text-white">جانب من ورشة الدعم النفسي</h3>
-                    <p class="text-gray-400 text-xs mt-1"> تفاعل مميز ومشاركة نصائح ملهمة لدعم الطلاب وتطوير مهاراتهم الشخصية.</p>
-                </div>
-            </div>
-
-            <div class="gallery-card bg-slate-950/40 border border-slate-900 rounded-2xl overflow-hidden group">
-                <div class="aspect-video w-full bg-slate-900 relative overflow-hidden flex items-center justify-center">
-                    <video class="w-full h-full object-cover absolute inset-0" controls preload="metadata">
-                        <source src="images/vid1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="p-5">
-                    <h3 class="font-bold text-base text-white">فيديو من ورشة الدعم النفسي</h3>
-                    <p class="text-gray-400 text-xs mt-1">مقتطفات مرئية توثق تفاعل الأعضاء والحظور خلال الورشة.</p>
-                </div>
-            </div>
-
-        </div> </section>
-
-    <footer class="border-t border-gray-900 py-8 text-center text-xs text-gray-500">
-        &copy; 2026 CodingHub. All rights reserved.
-    </footer>
-
-    <script src="script.js"></script>
-    <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
-    </script>
-</body>
-</html>
+</html>بتقدر نقسمهن لمكان للفيديوهات ومكان ورشات ومكان صور،يعني بوتون صغير اضغط عليه يبين الفيديوهات لحال وهيك ووسم خاص بكل واحد
